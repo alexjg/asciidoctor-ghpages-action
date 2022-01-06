@@ -84,6 +84,9 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     for FILE in `find . -name "*.html"`; do 
         git add -f "$FILE"; 
     done
+    for FILE in `find . -name "*.svg"`; do 
+        git add -f "$FILE"; 
+    done
 fi
 
 if [[ $INPUT_PDF_BUILD == true ]]; then 
